@@ -11,7 +11,7 @@ export type TodolistType = {
     title: string
     filter: stateTaskType
 }
-type TasksType = {
+export type TasksType = {
     [key: string]: Array<TaskType>
 }
 export type TaskType = {
@@ -85,7 +85,7 @@ function App() {
                     title: 'Node JS',
                     isDone: false
                 }
-            ]
+            ],
     });
 
     function addTodolist(title: string) {
